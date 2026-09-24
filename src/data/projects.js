@@ -22,3 +22,10 @@ export const yala = {
   mobile: '/work/yala-vape-mobile.webp',
   tech: ['React', 'TypeScript', 'Firebase', 'Tailwind CSS', 'Vercel'],
 }
+
+export const yaqten = {
+  url: 'https://al-yaqtin.vercel.app/',
+  desktop: '/work/yaqten-library.webp',
+  mobile: '/work/yaqten-library-mobile.webp',
+  tech: ['React', 'TypeScript', 'Firebase', 'Tailwind CSS', 'Vercel'],
+}

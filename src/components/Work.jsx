@@ -1,7 +1,7 @@
 import { Plus } from 'lucide-react'
 import { useLang } from '../LanguageContext.jsx'
 import { waLink } from '../config.js'
-import { jurista, yala } from '../data/projects.js'
+import { jurista, yala, yaqten } from '../data/projects.js'
 import ProjectCard from './ProjectCard.jsx'
 import { Reveal, SectionHeading, WhatsAppIcon } from './ui.jsx'
 
@@ -67,6 +67,22 @@ export default function Work() {
             url={yala.url}
             desktop={yala.desktop}
             mobile={yala.mobile}
+          />
+        </Reveal>
+
+        {/* ── Yaqten Library ─────────────────────────────────── */}
+        <Reveal className="mt-8">
+          <ProjectCard
+            layout="split"
+            label={w.yaqten.label}
+            name={w.yaqten.name}
+            type={w.yaqten.type}
+            story={w.yaqten.story}
+            features={w.yaqten.features}
+            tech={yaqten.tech}
+            url={yaqten.url}
+            desktop={yaqten.desktop}
+            mobile={yaqten.mobile}
           />
         </Reveal>
 

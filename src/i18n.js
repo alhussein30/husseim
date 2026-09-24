@@ -74,6 +74,14 @@ export const translations = {
           'متجر أونلاين كامل بالعربي والإنجليزي: كتالوج منتجات ونكهات ومصاريف شحن وشريط إعلانات بلغتين، شغال على دومين خاص.',
         features: ['كتالوج منتجات', 'نكهات', 'مصاريف شحن', 'شريط إعلانات بلغتين', 'دومين خاص'],
       },
+      yaqten: {
+        name: 'مكتبة اليقطين',
+        label: 'متجر كتب أونلاين',
+        type: 'متجر كتب عربي · مصر',
+        story:
+          'مكتبة أونلاين كاملة بالعربي: كتالوج كتب بيتحدّث لايف، تصنيفات وبحث، خصومات وتقييمات، سلة بتكمّل الطلب على واتساب، ولوحة تحكم يضيف منها صاحب المكتبة الكتب والباقات بنفسه.',
+        features: ['كتالوج لايف (Firebase)', 'تصنيفات وبحث', 'خصومات وتقييمات', 'سلة وطلب على واتساب', 'لوحة تحكم للكتب والباقات'],
+      },
       next: {
         title: 'مشروعك ممكن يكون الجاي.',
         cta: 'كلمني واتساب',
@@ -249,6 +257,20 @@ export const translations = {
           'Shipping fees',
           'Bilingual announcement bar',
           'Custom domain',
+        ],
+      },
+      yaqten: {
+        name: 'Yaqten Library',
+        label: 'Online bookstore',
+        type: 'Arabic bookstore · Egypt',
+        story:
+          'A complete Arabic online bookstore: a live-updating catalog, categories and search, discounts and ratings, a cart that completes orders on WhatsApp, and an admin dashboard where the owner manages books and bundles without a developer.',
+        features: [
+          'Live catalog (Firebase)',
+          'Categories & search',
+          'Discounts & ratings',
+          'Cart + WhatsApp ordering',
+          'Admin dashboard for books & bundles',
         ],
       },
       next: {
