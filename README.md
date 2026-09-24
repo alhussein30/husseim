@@ -1,6 +1,6 @@
 # Alhussein Salah, Portfolio
 
-A dark, premium, bilingual (Arabic first, RTL, plus English) portfolio for a freelance front-end developer.
+A dark, premium, bilingual (English by default, plus full Arabic RTL) portfolio for a freelance front-end developer.
 Built with **React + Vite, Tailwind CSS, Framer Motion** and **Firebase Firestore** for contact-form leads.
 
 ---

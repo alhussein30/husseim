@@ -1,4 +1,4 @@
-// All user-facing copy lives here. `ar` is the default language.
+// All user-facing copy lives here. `en` is the default language.
 // Anything in [SQUARE_BRACKETS] is a placeholder you should replace.
 
 export const translations = {

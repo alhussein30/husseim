@@ -5,9 +5,9 @@ const LanguageContext = createContext(null)
 
 function readSaved() {
   try {
-    return localStorage.getItem('lang') === 'en' ? 'en' : 'ar'
+    return localStorage.getItem('lang') === 'ar' ? 'ar' : 'en'
   } catch {
-    return 'ar'
+    return 'en'
   }
 }
 
