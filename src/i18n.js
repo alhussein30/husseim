@@ -1,0 +1,348 @@
+// All user-facing copy lives here. `ar` is the default language.
+// Anything in [SQUARE_BRACKETS] is a placeholder you should replace.
+
+export const translations = {
+  ar: {
+    meta: {
+      title: 'الحسين صلاح | مطوّر واجهات أمامية · متاجر أونلاين في مصر',
+      description:
+        'مطوّر React فريلانس في مصر. بصمّم وببني متاجر أونلاين وصفحات هبوط سريعة بالعربي والإنجليزي، فيها الدفع عند الاستلام وتتبع الأوردر وآراء العملاء.',
+    },
+    skip: 'تخطّى للمحتوى',
+    nav: {
+      work: 'أعمالي',
+      services: 'خدماتي',
+      process: 'طريقة الشغل',
+      about: 'عنّي',
+      contact: 'تواصل',
+      cta: 'ابدأ مشروعك',
+      openMenu: 'افتح القائمة',
+      closeMenu: 'اقفل القائمة',
+      switchLabel: 'Switch to English',
+      switchShort: 'EN',
+      home: 'الحسين، الصفحة الرئيسية',
+    },
+    hero: {
+      tag: 'مطوّر واجهات أمامية · مصر',
+      title: 'بصمّم وببني متاجر أونلاين شكلها فخم… وبتبيع بجد.',
+      sub: 'مواقع سريعة ومناسبة للموبايل، بالعربي والإنجليزي، للبراندات المصرية، فيها الطلب والدفع عند الاستلام وتتبع الأوردر وآراء العملاء.',
+      primary: 'شوف أعمالي',
+      secondary: 'كلمني واتساب',
+      available: 'متاح لمشاريع جديدة',
+      photoAlt: 'الحسين صلاح، مطوّر واجهات أمامية',
+      stats: [
+        { value: '+٣', label: 'متاجر شغالة' },
+        { value: 'عربي وإنجليزي', label: '' },
+        { value: '١٠٠٪', label: 'مناسب للموبايل' },
+      ],
+    },
+    work: {
+      eyebrow: 'أعمال مختارة',
+      title: 'مشاريع شغالة دلوقتي',
+      visit: 'زور الموقع',
+      features: 'المميزات',
+      tech: 'التقنيات',
+      newTab: '(بيفتح في تاب جديدة)',
+      jurista: {
+        name: 'جوريستا كوفي',
+        tagline: 'براند واحد، اتجاهين',
+        type: 'متجر إلكتروني + تجربة براند · مصر',
+        story:
+          'براند قهوة تركي عملته بطريقتين: متجر هدفه يحوّل الزائر لطلب، وموقع فاخر بيحكي قصة البراند ويبيع الإحساس.',
+        store: {
+          label: 'أ',
+          name: 'المتجر',
+          features: [
+            '٥ خلطات باختيار الوزن والنكهة',
+            'سعر توصيل لكل محافظة',
+            'الدفع عند الاستلام',
+            'تتبع الأوردر',
+            'آراء العملاء لايف (Firebase)',
+          ],
+        },
+        experience: {
+          label: 'ب',
+          name: 'التجربة',
+          features: ['حكي سينمائي مع السكرول', 'تايبوجرافي عربي فخم', 'ظهور متحرك للمنتجات'],
+        },
+      },
+      yala: {
+        name: 'Yala Vape',
+        label: 'متجر إلكتروني',
+        type: 'متجر أونلاين بلغتين · الإمارات',
+        story:
+          'متجر أونلاين كامل بالعربي والإنجليزي: كتالوج منتجات ونكهات ومصاريف شحن وشريط إعلانات بلغتين، شغال على دومين خاص.',
+        features: ['كتالوج منتجات', 'نكهات', 'مصاريف شحن', 'شريط إعلانات بلغتين', 'دومين خاص'],
+      },
+      next: {
+        title: 'مشروعك ممكن يكون الجاي.',
+        cta: 'كلمني واتساب',
+      },
+    },
+    services: {
+      eyebrow: 'خدماتي',
+      title: 'اللي أقدر أعمله لبراندك',
+      from: (price) => `يبدأ من ${price} جنيه`,
+      items: [
+        {
+          key: 'store',
+          title: 'متجر أونلاين',
+          desc: 'منتجات وسلة ودفع عند الاستلام وتتبع أوردر، وسهل تديره بنفسك.',
+        },
+        {
+          key: 'landing',
+          title: 'صفحة هبوط',
+          desc: 'صفحة واحدة معمولة عشان تبيع منتج واحد أو حملة واحدة.',
+        },
+        {
+          key: 'brand',
+          title: 'موقع براند',
+          desc: 'موقع فخم بيحكي قصة البراند بتاعك.',
+        },
+        {
+          key: 'care',
+          title: 'تطوير وصيانة',
+          desc: 'نخلّي موقعك الحالي أسرع وأحلى، ومعاه دعم شهري.',
+        },
+      ],
+    },
+    process: {
+      eyebrow: 'طريقة الشغل',
+      title: 'هنشتغل إزاي',
+      steps: [
+        { num: '٠١', title: 'مكالمة', desc: 'نتكلم عن شغلك وهدفك (مجانًا)' },
+        { num: '٠٢', title: 'تصميم', desc: 'تشوف الشكل قبل أي كود' },
+        { num: '٠٣', title: 'تنفيذ', desc: 'ببني وبعتلك لينك تتابع منه' },
+        { num: '٠٤', title: 'إطلاق', desc: 'دومين واستضافة، ومعاك بعد الإطلاق' },
+      ],
+    },
+    why: {
+      eyebrow: 'ليه أنا',
+      title: 'تقنية معمولة عشان تبيع',
+      items: [
+        { title: 'سرعة تحميل', benefit: 'العميل ميمشيش' },
+        { title: 'عربي حقيقي', benefit: 'من اليمين للشمال، مش ترجمة وخلاص' },
+        { title: 'فايربيز', benefit: 'طلبات وتقييمات من غير سيرفر مكلف' },
+        { title: 'استضافة على Vercel', benefit: 'آمن وشغال دايمًا' },
+      ],
+      stack: 'بشتغل بـ',
+    },
+    about: {
+      eyebrow: 'عنّي',
+      title: 'أهلاً، أنا الحسين.',
+      text: 'أنا الحسين صلاح، مطوّر واجهات أمامية من مصر. بساعد البيزنس الصغير والبراندات الجديدة إنهم يبقوا أونلاين بموقع شكله يليق بمنتجهم، وبيسهّل على العميل إنه يطلب.',
+      photoAlt: 'صورة الحسين صلاح',
+    },
+    contact: {
+      eyebrow: 'تواصل',
+      title: 'عندك فكرة مشروع؟ يلا نتكلم.',
+      sub: 'ابعتلي على واتساب، أو املا الفورم وهرجعلك.',
+      whatsapp: 'كلمني واتساب',
+      email: 'الإيميل',
+      formTitle: 'أو ابعت تفاصيل مشروعك',
+      name: 'اسمك',
+      phone: 'رقم الموبايل (واتساب)',
+      projectType: 'نوع المشروع',
+      choose: 'اختار…',
+      types: {
+        store: 'متجر أونلاين',
+        landing: 'صفحة هبوط',
+        brand: 'موقع براند',
+        other: 'حاجة تانية',
+      },
+      message: 'احكيلي عن مشروعك',
+      submit: 'ابعت',
+      sending: 'بيتبعت…',
+      success: 'شكرًا! رسالتك وصلت، وهرجعلك قريب.',
+      error: 'حصلت مشكلة ومقدرتش أبعت. جرّب تاني أو كلمني واتساب.',
+      errors: {
+        name: 'اكتب اسمك',
+        phone: 'اكتب رقم موبايل صحيح',
+        projectType: 'اختار نوع المشروع',
+      },
+    },
+    whatsappMessage: 'أهلاً الحسين، عايز أعمل موقع لـ...',
+    footer: {
+      text: '© ٢٠٢٦ الحسين صلاح. معمول بـ React ومرفوع على Vercel.',
+      top: 'لفوق',
+    },
+    fab: 'كلمني واتساب',
+  },
+
+  en: {
+    meta: {
+      title: 'Alhussein Salah | Front-End Developer · Online stores in Egypt',
+      description:
+        'Freelance React developer in Egypt. I build fast, mobile-first online stores and landing pages in Arabic & English, with cash on delivery, order tracking and customer reviews.',
+    },
+    skip: 'Skip to content',
+    nav: {
+      work: 'Work',
+      services: 'Services',
+      process: 'Process',
+      about: 'About',
+      contact: 'Contact',
+      cta: 'Start a project',
+      openMenu: 'Open menu',
+      closeMenu: 'Close menu',
+      switchLabel: 'التحويل للعربي',
+      switchShort: 'ع',
+      home: 'Alhussein, home',
+    },
+    hero: {
+      tag: 'Front-End Developer · Egypt',
+      title: 'I build online stores that look premium and actually sell.',
+      sub: 'Fast, mobile-first websites in Arabic & English for Egyptian brands, with ordering, cash on delivery, order tracking and customer reviews built in.',
+      primary: 'See my work',
+      secondary: 'Talk on WhatsApp',
+      available: 'Available for new projects',
+      photoAlt: 'Alhussein Salah, front-end developer',
+      stats: [
+        { value: '3+', label: 'live stores' },
+        { value: 'AR + EN', label: '' },
+        { value: '100%', label: 'mobile-first' },
+      ],
+    },
+    work: {
+      eyebrow: 'Selected work',
+      title: 'Live projects',
+      visit: 'Visit live site',
+      features: 'Features',
+      tech: 'Tech',
+      newTab: '(opens in a new tab)',
+      jurista: {
+        name: 'Jurista Coffee',
+        tagline: 'One brand, two directions',
+        type: 'E-commerce + brand experience · Egypt',
+        story:
+          'A Turkish coffee brand I built two ways: a conversion-focused store that turns visitors into orders, and a luxury storytelling site that sells the brand feeling.',
+        store: {
+          label: 'A',
+          name: 'The Store',
+          features: [
+            '5 blends with weight & flavor options',
+            'Delivery price per governorate',
+            'Cash on delivery',
+            'Order tracking',
+            'Live customer reviews (Firebase)',
+          ],
+        },
+        experience: {
+          label: 'B',
+          name: 'The Experience',
+          features: [
+            'Cinematic scroll storytelling',
+            'Premium Arabic typography',
+            'Animated product reveals',
+          ],
+        },
+      },
+      yala: {
+        name: 'Yala Vape',
+        label: 'E-commerce store',
+        type: 'Bilingual e-commerce store · UAE',
+        story:
+          'A full Arabic/English online store with a product catalog, flavors, shipping fees and a bilingual announcement bar, live on its own custom domain.',
+        features: [
+          'Product catalog',
+          'Flavors',
+          'Shipping fees',
+          'Bilingual announcement bar',
+          'Custom domain',
+        ],
+      },
+      next: {
+        title: 'Your brand could be next.',
+        cta: 'Talk on WhatsApp',
+      },
+    },
+    services: {
+      eyebrow: 'Services',
+      title: 'What I can build for your brand',
+      from: (price) => `Starting from ${price} EGP`,
+      items: [
+        {
+          key: 'store',
+          title: 'Online Store',
+          desc: 'Products, cart, cash on delivery and order tracking, easy for you to manage.',
+        },
+        {
+          key: 'landing',
+          title: 'Landing Page',
+          desc: 'One page built to sell one product or campaign.',
+        },
+        {
+          key: 'brand',
+          title: 'Brand Website',
+          desc: 'A premium site that tells your story.',
+        },
+        {
+          key: 'care',
+          title: 'Redesign & Care',
+          desc: 'Make your current site faster and nicer, plus monthly support.',
+        },
+      ],
+    },
+    process: {
+      eyebrow: 'Process',
+      title: "How we'll work",
+      steps: [
+        { num: '01', title: 'Call', desc: 'We talk about your business and goals (free)' },
+        { num: '02', title: 'Design', desc: 'You see the look before any code' },
+        { num: '03', title: 'Build', desc: 'I develop and share a live preview link' },
+        { num: '04', title: 'Launch', desc: 'Domain, hosting, and I stay with you after launch' },
+      ],
+    },
+    why: {
+      eyebrow: 'Why me',
+      title: 'Tech that works for your sales',
+      items: [
+        { title: 'Fast loading', benefit: "customers don't leave" },
+        { title: 'Real Arabic RTL', benefit: 'not a translation hack' },
+        { title: 'Firebase', benefit: 'reviews, orders and tracking without a costly server' },
+        { title: 'Hosted on Vercel', benefit: 'secure, always online' },
+      ],
+      stack: 'Built with',
+    },
+    about: {
+      eyebrow: 'About',
+      title: "Hi, I'm Alhussein.",
+      text: "I'm Alhussein Salah, a front-end developer from Egypt. I help small businesses and new brands get online with websites that look as good as their product and make ordering easy for their customers.",
+      photoAlt: 'Portrait of Alhussein Salah',
+    },
+    contact: {
+      eyebrow: 'Contact',
+      title: "Have a project in mind? Let's talk.",
+      sub: "Message me on WhatsApp, or fill in the form and I'll get back to you.",
+      whatsapp: 'Talk on WhatsApp',
+      email: 'Email',
+      formTitle: 'Or send your project details',
+      name: 'Your name',
+      phone: 'Phone (WhatsApp)',
+      projectType: 'Project type',
+      choose: 'Choose…',
+      types: {
+        store: 'Online store',
+        landing: 'Landing page',
+        brand: 'Brand website',
+        other: 'Other',
+      },
+      message: 'Tell me about your project',
+      submit: 'Send',
+      sending: 'Sending…',
+      success: "Thanks! Your message arrived. I'll get back to you soon.",
+      error: "Something went wrong and your message wasn't sent. Try again or message me on WhatsApp.",
+      errors: {
+        name: 'Please enter your name',
+        phone: 'Please enter a valid phone number',
+        projectType: 'Please choose a project type',
+      },
+    },
+    whatsappMessage: "Hi Alhussein, I'd like a website for...",
+    footer: {
+      text: '© 2026 Alhussein Salah. Built with React & deployed on Vercel.',
+      top: 'Back to top',
+    },
+    fab: 'Talk on WhatsApp',
+  },
+}

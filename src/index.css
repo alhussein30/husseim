@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ── Palette: change these RGB triplets to re-theme the whole site ── */
+  :root {
+    --c-ink: 11 11 20; /* #0B0B14 */
+    --c-surface: 19 19 31; /* #13131F */
+    --c-text: 237 237 245; /* #EDEDF5 */
+    --c-muted: 148 148 171; /* #9494AB */
+    --c-accent: 129 140 248; /* #818CF8 */
+    --c-accent-soft: 165 180 252; /* #A5B4FC */
+  }
+  html {
+    @apply bg-ink text-cream antialiased;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-x: clip; /* no sideways scroll from decorative glows */
+    scroll-padding-top: 5rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+  html[lang='ar'] body {
+    @apply font-ar;
+  }
+  html[lang='en'] body {
+    @apply font-en;
+  }
+  body {
+    @apply min-h-screen bg-ink leading-relaxed;
+    overflow-x: clip;
+    text-rendering: optimizeLegibility;
+  }
+  /* Subtle film grain over everything */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  ::selection {
+    @apply bg-accent text-ink;
+  }
+  :focus-visible {
+    @apply outline outline-2 outline-offset-4 outline-accent;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-bold text-cream;
+    text-wrap: balance;
+  }
+  html[lang='en'] h1,
+  html[lang='en'] h2 {
+    letter-spacing: -0.03em;
+  }
+  html[lang='ar'] h1,
+  html[lang='ar'] h2 {
+    line-height: 1.35;
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-site px-5 sm:px-8;
+  }
+  .section {
+    @apply relative py-24 sm:py-32;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-sm font-medium text-accent;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-8 bg-accent/70;
+  }
+  .section-title {
+    @apply mt-4 text-3xl leading-tight sm:text-5xl;
+  }
+  .glass {
+    @apply border border-line bg-surface/70 backdrop-blur-xl;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line bg-white/[0.03] px-3 py-1 text-xs text-cream/85;
+  }
+  .chip-tech {
+    @apply inline-flex items-center rounded-full border border-accent/25 bg-accent/[0.06] px-3 py-1 text-xs text-accent-soft;
+  }
+  .btn {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full px-6 text-[15px] font-semibold transition duration-300;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-ink hover:bg-accent-soft hover:shadow-glow;
+  }
+  .btn-ghost {
+    @apply btn border border-line bg-white/[0.03] text-cream hover:border-accent/50 hover:text-accent-soft;
+  }
+  .field {
+    @apply block w-full rounded-xl border border-line bg-ink/60 px-4 py-3 text-cream placeholder:text-muted/70 transition focus:border-accent/60 focus:outline-none focus:ring-2 focus:ring-accent/30;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
